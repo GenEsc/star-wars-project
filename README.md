@@ -38,7 +38,7 @@ Before you begin, ensure you have the following installed on your machine:
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/<your-username>/star-wars-project.git
+    git clone https://github.com/<your-username>/star-wars-project.git star-wars-test
     cd star-wars-test
     ```
 
