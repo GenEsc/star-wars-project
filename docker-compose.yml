@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  backend:
+    build: ./back
+    ports:
+      - "8080:8080"
+
+  frontend:
+    build: ./front/star-wars-frontend
+    container_name: star-wars-frontend
+    image: star-wars-front:1.0.0
+    ports:
+      - "6969:4200"
+    depends_on:
+      - backend
