@@ -1,0 +1,30 @@
+package pescacena.example.star.wars.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import pescacena.example.star.wars.constants.StarWarsConstants;
+
+@Service
+public class StarWarsService {
+	@Autowired
+	private RestTemplate restTemplate;
+	/*
+	 * public List<?> getPeople(int page, String search, String sort) { // Logic to
+	 * call SWAPI and fetch people data} return null; }
+	 * 
+	 * public List<?> getPlanets(int page, String search, String sort) { // Logic to
+	 * call SWAPI and fetch planets data return null; }
+	 */
+
+	public String getPlanets(int page) {
+		return restTemplate.getForObject(StarWarsConstants.PLANETS_URL + page, String.class);
+	}
+
+	public String getPeople(int page) {
+		return restTemplate.getForObject(StarWarsConstants.PEOPLE_URL + page, String.class);
+	}
+}

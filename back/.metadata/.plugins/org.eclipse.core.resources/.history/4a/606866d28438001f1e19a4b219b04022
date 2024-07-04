@@ -1,0 +1,16 @@
+package pescacena.example.star.wars.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class StarWarsService {
+	
+	public List<?> getPeople(int page, String search, String sort) {
+        // Logic to call SWAPI and fetch people data
+    }
+
+    public List<?> getPlanets(int page, String search, String sort) {
+        // Logic to call SWAPI and fetch planets data
+    }
+
+}

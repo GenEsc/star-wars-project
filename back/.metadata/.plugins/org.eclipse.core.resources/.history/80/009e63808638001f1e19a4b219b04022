@@ -1,0 +1,10 @@
+package pescacena.example.star.wars.configuration;
+
+@Configuration
+public class AppConfig {
+	
+	@Bean
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
+    }
+}

@@ -1,0 +1,5 @@
+package pescacena.example.star.wars.controller;
+
+public class StarWarsController {
+
+}

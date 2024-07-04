@@ -1,0 +1,21 @@
+package pescacena.example.star.wars.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import pescacena.example.star.wars.constants.StarWarsConstants;
+
+@Service
+public class StarWarsService {
+	
+	public List<?> getPeople(int page, String search, String sort) {
+		return StarWarsConstants.PEOPLE_URL+page;
+        // Logic to call SWAPI and fetch people data
+    }
+
+    public List<?> getPlanets(int page, String search, String sort) {
+        // Logic to call SWAPI and fetch planets data
+    }
+
+}
